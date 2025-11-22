@@ -1,4 +1,4 @@
-# Running llama.cpp-on NVIDIA Jetson Nano 4GB (JetPack 4)
+# llama.cpp-on NVIDIA Jetson Nano 4GB (JetPack 4.6.6)
 This guide provides a robust method to install hardware-accelerated llama.cpp on the original Jetson Nano 4GB.
 
 The Problem: The Jetson Nano is stuck on JetPack 4 (Ubuntu 18.04 / CUDA 10.2), while modern llama.cpp versions require newer compilers and CUDA 11+. Standard installation attempts usually fail with "CPU only" builds or compiler errors.
