@@ -10,6 +10,22 @@ The Solution: This guide uses a specific compatible commit of llama.cpp, upgrade
 * OS: JetPack 4.6.1 (L4T R32.7.1) recommended.
 * Swap: Ensure you have at least 4GB of SWAP file active (JetPack usually creates this by default).
 
+## Optional: Update OS (recommended)
+This repository includes a helper script, `update_os.sh`, which automates common system updates and package preparations for JetPack 4.6.x on the Jetson Nano. Review the script before running it.
+
+```bash
+# Ensure the script is executable (it should already be in this repo)
+chmod +x update_os.sh
+
+# Inspect the script before running
+less update_os.sh
+
+# Run the updater with sudo to apply system updates and install required packages
+sudo ./update_os.sh
+```
+
+Warning: The update script may upgrade system packages and could trigger a reboot. Run it on a machine you control and ensure you have backups of important data.
+
 ## Step 1: Install Dependencies & GCC-8
 The default GCC 7 on JetPack 4 is too old to compile modern GGUF-compatible code. We must install GCC 8.
 ```bash
