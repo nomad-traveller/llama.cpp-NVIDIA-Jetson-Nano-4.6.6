@@ -2,6 +2,8 @@
 
 This repository provides a tested setup to build and run `llama.cpp` with GPU acceleration on the Jetson Nano (JetPack 4 / CUDA 10.2). It includes helper scripts and documentation tailored to the Nano's older toolchain and limited RAM.
 
+Prerequisite: we recommend running the included `update_os.sh` before following `INSTALL_LLAMA.md`. The script prepares system packages and installs utilities the build and patch steps expect — review it before running.
+
 What this repo provides
 - A focused `INSTALL_LLAMA.md` with step-by-step instructions to prepare the system, apply necessary patches (including NEON fixes), build with `LLAMA_CUBLAS`, and run or serve models.
 - Helper scripts in the repo root:
